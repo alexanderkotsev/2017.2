@@ -3,7 +3,7 @@
 ## Introduction
 This procedure describes the approach to be followed for encoding INSPIRE data in accordance with the IR through the use of alternative encodings.
 
-Open Question: Are (i) additional encoding and (ii) extended INSPIRE models in scope? 
+Open Question: are (i) additional encoding and (ii) extended INSPIRE models in scope? 
 
 ## Approach
 
