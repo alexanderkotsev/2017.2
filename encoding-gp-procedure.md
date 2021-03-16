@@ -3,7 +3,7 @@
 ## Introduction
 This procedure describes the approach to be followed for encoding INSPIRE data in accordance with the IR through the use of alternative encodings.
 
-Open Question: Are additional encodings in scope?
+Open Question: Are (i) additional encoding and (ii) extended INSPIRE models in scope? 
 
 ## Approach
 
@@ -15,8 +15,8 @@ Once the data instances are available, mapping to the default INSPIRE encoding (
 - [Matching tables](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/mapping/)
 - Executable transformation script, incl. software-specific approaches that can be replicated.
 
-### Step 3. Data validation (optional)
-Confirming the approach through the [INSPIRE reference validator]() can be achieved through deriving and validating GML instances based on the mapping performed in Step 2.
+### Step 3. Data validation
+Confirming the approach through the [INSPIRE reference validator](https://inspire.ec.europa.eu/validator/) can be achieved through deriving and validating GML instances based on the mapping performed in Step 2.
 
 
 ## Update to the glossary
