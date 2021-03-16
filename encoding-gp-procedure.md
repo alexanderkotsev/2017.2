@@ -7,6 +7,11 @@ Open Question: are (i) additional encoding and (ii) extended INSPIRE models in s
 
 ## Approach
 
+### Principles
+- A stepwise approach is envisioned for encoding the data. 
+- The same approach is applied for all alternative encodings
+- Should there be different proposals for the encoding of data for the same data model/theme the changes are discussed (i) between the proposers, and if needed (ii) within the context of the temporary sub-group [2.3.1 'Governance of INSPIRE Artefacts']().
+
 ### Step 1. Data encoding
 Data should be encoded through the alternative encoding (e.g. GPKG or GeoJSON) by following the (i) INSPIRE UML models, (ii) model transformation rules and (iii) the encoding-specific rules.
 
