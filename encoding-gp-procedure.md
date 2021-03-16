@@ -23,7 +23,7 @@ Once the data instances are available, mapping to the default INSPIRE encoding (
 - Executable transformation script, incl. software-specific approaches that can be replicated.
 
 #### Data validation
-Confirming the approach through the [INSPIRE reference validator](https://inspire.ec.europa.eu/validator/) can be achieved through deriving and validating GML instances based on the mapping performed in Step 2. The GML instances and the test report from the INSPIRE reference validator (html) should be made available.
+Confirming the approach through the [INSPIRE reference validator](https://inspire.ec.europa.eu/validator/) can be achieved through deriving and validating GML instances based on the mapping performed in Step 2. The GML instances and the test report from the [INSPIRE reference validator](https://inspire.ec.europa.eu/validator/) (html) should be made available.
 
 ## Update to the glossary
 - Additional encoding
