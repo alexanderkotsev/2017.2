@@ -1,25 +1,33 @@
 # Procedure for alternative encodings of INSPIRE data
 
-## Introduction
-This procedure describes the approach to be followed for encoding INSPIRE data in accordance with the IR through the use of alternative encodings.
+## Scope
+This procedure describes the approach to be followed for encoding INSPIRE data in accordance with the Implementing Rules on interoperability of spatial data sets and services (IR ISDSS) through the use of alternative encodings, i.e. different from the default encoding - XML, but at the same time meeting all the legally-binding obligations of the IR ISDSS. 
 
-Open Question: are (i) additional encoding and (ii) extended INSPIRE models in scope? 
+Open Questions: are (i) additional encodings and (ii) extended INSPIRE models in scope? 
 
 ## Approach
 
 ### Principles
-- A stepwise approach is envisioned for encoding the data. 
-- The same approach is applied for all alternative encodings
-- Should there be different proposals for the encoding of data for the same data model/theme the changes are discussed (i) between the proposers, and if needed (ii) within the context of the temporary sub-group [2.3.1 'Governance of INSPIRE Artefacts'](https://webgate.ec.europa.eu/fpfis/wikis/display/InspireMIG/Action+2.3+Simplification+of+INSPIRE+implementation).
+Adhereing to the following principles will facilitate the encoding of data under INSPIRE.
 
-### Steps
+- A stepwise approach is envisioned for encoding the data. The steps to be followed are provided below.
+- Should there be different proposals for the encoding of data for the same data model or data theme, the changes are discussed (i) between the proposers, ideally on GitHub, and if needed (ii) within the context of the temporary sub-group [2.3.1 'Governance of INSPIRE Artefacts'](https://webgate.ec.europa.eu/fpfis/wikis/display/InspireMIG/Action+2.3+Simplification+of+INSPIRE+implementation).
+
+### Envisioned Steps
 
 #### Step 1. Data encoding
-Data should be encoded through the alternative encoding (e.g. GPKG or GeoJSON) by following the (i) INSPIRE UML models, (ii) model transformation rules and (iii) the encoding-specific rules.
+Data should be encoded through the alternative encoding (e.g. GPKG or GeoJSON) by following the provisions of the INSPIRE UML models and/or Application schemas. When encoding the data, [model transformation rules](https://github.com/INSPIRE-MIF/2017.2/blob/master/model-transformations/TransformationRules.md) and the encoding-specific rules shall be considered. Model transformation rules are encoding-agnostic, and dedicated specific rules are developed for each data encoding (e.g. for [GeoJSON](https://github.com/INSPIRE-MIF/2017.2/blob/master/GeoJSON/geojson-encoding-rule.md), GeoPackage)
 
-#### Step 2. Mapping to the default encoding
-Once the data instances are available, mapping to the default INSPIRE encoding (XML) should be made available online through at least one of the following means:
-- [INSPIRE Matching tables](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/mapping/)
+#### Step 2. Describe the mapping to the default encoding
+Once the data instances prepared in accordance with Step 1. are generated, mapping to the default INSPIRE encoding (XML) should be made available together with an example excerpt of a dataset on GitHub through at least one of the following means:
+- [INSPIRE Matching tables](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/mapping/). Ideally, this should be done on the level of physical/format level, e.g. through mapping of xpaths versus jsonpaths.
+
+| GML        | GeoJSON           |
+| ------------- |:-------------:|
+| Ad:Address/inspireId/localId      | $.properties.inspireId_localId |
+| Ad:Address/inspireId/namespace     | $.properties.inspireId_namespace     |
+| ... | ...      |
+
 - Executable transformation script, incl. software-specific approaches that can be replicated.
 
 #### Step 3. Data validation
