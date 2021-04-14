@@ -20,10 +20,10 @@ Data should be encoded through the alternative encoding (e.g. GPKG or GeoJSON) b
 
 #### Step 2. Describe the mapping to the default encoding
 Once the data instances prepared in accordance with Step 1. are generated, mapping to the default INSPIRE encoding (XML) should be made available together with an example excerpt of a dataset on GitHub through at least one of the following means:
-- [INSPIRE Matching tables](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/mapping/). Ideally, this should be done on the level of physical/format level, e.g. through mapping of xpaths versus jsonpaths.
+- [INSPIRE Matching tables](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/mapping/). Ideally, this should be done on the level of physical/format level, e.g. through mapping of xpaths versus jsonpaths, e.g.:
 
 | GML        | GeoJSON           |
-| ------------- |:-------------:|
+| ------------- |-------------|
 | Ad:Address/inspireId/localId      | $.properties.inspireId_localId |
 | Ad:Address/inspireId/namespace     | $.properties.inspireId_namespace     |
 | ... | ...      |
