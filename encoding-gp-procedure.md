@@ -16,11 +16,14 @@ Adhereing to the following principles will facilitate the encoding of data under
 ### Envisioned Steps
 
 #### Step 1. Data encoding
-Data should be encoded through the alternative encoding (e.g. GPKG or GeoJSON) by following the provisions of the INSPIRE UML models and/or Application schemas. When encoding the data, [model transformation rules](https://github.com/INSPIRE-MIF/2017.2/blob/master/model-transformations/TransformationRules.md) and the encoding-specific rules shall be considered. Model transformation rules are encoding-agnostic, and dedicated specific rules are developed for each data encoding (e.g. for [GeoJSON](https://github.com/INSPIRE-MIF/2017.2/blob/master/GeoJSON/geojson-encoding-rule.md), GeoPackage)
+Data should be encoded through the alternative encoding (e.g. GPKG or GeoJSON) by following the provisions of the INSPIRE UML models and/or Application schemas. When encoding the data the following should be consulted:
+1. [model transformation rules](https://github.com/INSPIRE-MIF/2017.2/blob/master/model-transformations/TransformationRules.md) that are encoding-agnostic, and
+2. Encoding-specific rules  developed per each data encoding (e.g. for [GeoJSON](https://github.com/INSPIRE-MIF/2017.2/blob/master/GeoJSON/geojson-encoding-rule.md), GeoPackage, etc.)
 
 #### Step 2. Describe the mapping to the default encoding
 Once the data instances prepared in accordance with Step 1. are generated, mapping to the default INSPIRE encoding (XML) should be made available together with an example excerpt of a dataset on GitHub through at least one of the following means:
-- [INSPIRE Matching tables](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/mapping/). Ideally, this should be done on the level of physical/format level, e.g. through mapping of xpaths versus jsonpaths, e.g.:
+1. Executable transformation script, incl. software-specific approaches that can be replicated.
+2. [INSPIRE Matching tables](https://inspire.ec.europa.eu/data-model/approved/r4618-ir/mapping/). Ideally, this should be done on the level of physical/format level, e.g. through mapping of xpaths versus jsonpaths, e.g.:
 
 | GML        | GeoJSON           |
 | ------------- |-------------|
@@ -28,14 +31,7 @@ Once the data instances prepared in accordance with Step 1. are generated, mappi
 | Ad:Address/inspireId/namespace     | $.properties.inspireId_namespace     |
 | ... | ...      |
 
-- Executable transformation script, incl. software-specific approaches that can be replicated.
+
 
 #### Step 3. Data validation
 Confirming the approach through the [INSPIRE reference validator](https://inspire.ec.europa.eu/validator/) can be achieved through deriving and validating GML instances based on the mapping performed in Step 2. The GML instances and the test report from the [INSPIRE reference validator](https://inspire.ec.europa.eu/validator/) (html) should be made available.
-
-## Update to the glossary
-- Additional encoding
-- Alternative encoding
-- Default encoding
-- Model-transformation rules
-- Encoding-specific rules
