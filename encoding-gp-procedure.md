@@ -17,7 +17,7 @@ Adhereing to the following principles will facilitate the encoding of data under
 
 #### Step 1. Data encoding
 Data should be encoded through the alternative encoding (e.g. GPKG or GeoJSON) by following the provisions of the INSPIRE UML models and/or Application schemas. When encoding the data the following should be consulted:
-1. [model transformation rules](https://github.com/INSPIRE-MIF/2017.2/blob/master/model-transformations/TransformationRules.md) that are encoding-agnostic, and
+1. [Model transformation rules](https://github.com/INSPIRE-MIF/2017.2/blob/master/model-transformations/TransformationRules.md) that are encoding-agnostic, and
 2. Encoding-specific rules  developed per each data encoding (e.g. for [GeoJSON](https://github.com/INSPIRE-MIF/2017.2/blob/master/GeoJSON/geojson-encoding-rule.md), GeoPackage, etc.)
 
 #### Step 2. Describe the mapping to the default encoding
