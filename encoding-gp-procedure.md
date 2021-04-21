@@ -1,4 +1,4 @@
-# Procedure for alternative encodings of INSPIRE data
+# Procedure for alternative encodings of INSPIRE data (DRAFT)
 
 ## Scope
 This procedure describes the approach to be followed for encoding INSPIRE data in accordance with the Implementing Rules on interoperability of spatial data sets and services (IR ISDSS) through the use of alternative encodings, i.e. different from the default encoding - XML, but at the same time meeting all the legally-binding obligations of the IR ISDSS. 
